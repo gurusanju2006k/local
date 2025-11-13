@@ -1,1 +1,17 @@
-print("This is my new repo")
+import pandas as pd 
+import numpy as np 
+seriesA=pd.Series([10,20,30,40,50])
+seriesB=pd.Series([40,50,60,70,80])
+print(seriesA,seriesB)
+notcommon=pd.Series(list(set(seriesA).symmetric_difference(set(seriesB))))
+print(notcommon)
+sum=seriesB.sum()
+print("sum value of seriesB",sum)
+mean=seriesA.mean()
+print("mean value of seriesA",mean)
+median=seriesB.median()
+print("median value of seriesB",median)
+largest=seriesA.max()
+print("largest value of seriesA",largest)
+smallest=seriesA.min()
+print("smallest value of seriesA",smallest)
